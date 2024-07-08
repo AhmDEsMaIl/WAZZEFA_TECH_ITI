@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1711194058 source:g:\embedded_materials\imt\projects\c projects\clinc_system\func.c
+	"Clinc_System.h"
+	<stdio.h>
+	<stdlib.h>
+
+1711190999 source:g:\embedded_materials\imt\projects\c projects\clinc_system\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Clinc_System.h"
+
+1710687230 g:\embedded_materials\imt\projects\c projects\clinc_system\clinc_system.h
+

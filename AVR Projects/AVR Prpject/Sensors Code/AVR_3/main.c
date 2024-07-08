@@ -1,0 +1,94 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 8, 2024
+ *      Author: ahmed
+ */
+/****************************LIB***************************/
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_Types.h"
+
+/****************************MCAL**************************/
+#include "MCAL/DIO/DIO_Interface.h"
+#include "MCAL/TIMERS/TIMERS_Interface.h"
+#include "MCAL/GIE/GIE_Interface.h"
+#include "MCAL/EXTI/EXTI_Interface.h"
+#include "MCAL/USART/USART_Interface.h"
+#include "MCAL/SPI/SPI_Interface.h"
+#include "MCAL/SPI_NEW/SPI.h"
+#include "MCAL/TWI/TWI_Interface.h"
+#include "MCAL/EEPROM/EEPROM_Interface.h"
+#include "MCAL/ADC/ADC_Interface.h"
+
+/****************************HAL**************************/
+#include"HAL/KEYPAD/KEYPAD_Interface.h"
+#include"HAL/LCD/LCD_Interface.h"
+#include "HAL/DCMOTOR/DCMOTOR_Interface.h"
+#include "HAL/LCD/LCD_Interface.h"
+#include "HAL/LM35/LM35_Interface.h"
+
+
+/*Inclusions*/
+#include "avr/delay.h"
+
+
+int main(void)
+{
+	/*************************************************************/
+	/*				         2- PIN SETUB				         */
+	/*************************************************************/
+	DIO_u8SetPinDirection(DIO_PORTB,DIO_PIN4,DIO_PIN_INPUT);
+	DIO_u8SetPinDirection(DIO_PORTB,DIO_PIN5,DIO_PIN_INPUT);
+	DIO_u8SetPinDirection(DIO_PORTB,DIO_PIN6,DIO_PIN_OUTPUT);
+	DIO_u8SetPinDirection(DIO_PORTB,DIO_PIN7,DIO_PIN_INPUT);
+
+
+
+	DIO_u8SetPinDirection(DIO_PORTA,DIO_PIN0,DIO_PIN_INPUT);
+	DIO_u8SetPinDirection(DIO_PORTA,DIO_PIN1,DIO_PIN_INPUT);
+
+
+	/*************************************************************/
+	/*				 1- MODULES INITIALIZATION				     */
+	/*************************************************************/
+	LCD_voidInit();
+	LM35_voidInit();
+	SPI_VoidInit();
+	/*************************************************************/
+	/*				    3- SET CALLBACK FUNCTION				 */
+	/*************************************************************/
+	/***************************************************************/
+	u8 Recvice=0;
+	u16 Temp_1=0;
+	u16 Temp_2=0;
+	LCD_voidSetPosition(0,0);
+	LCD_voidSendString("ok");
+	while(1)
+	{
+		SPI_u8Tranceive(10,&Recvice);
+		if(Recvice==1)
+		{
+			Recvice=-1;
+			Temp_1=LM35_u16GetTempReading(CHANNEL0);
+			SPI_u8Tranceive((u8)Temp_1,&Recvice);
+			LCD_voidSetPosition(1,0);
+			LCD_voidSendString("SPI1:  ");
+			LCD_voidSetPosition(1,5);
+			LCD_voidSendNumber(Temp_1);
+		}
+
+		if(Recvice==2)
+		{
+			Recvice=-1;
+			Temp_2=LM35_u16GetTempReading(CHANNEL1);
+			SPI_u8Tranceive((u8)Temp_2,&Recvice);
+			LCD_voidSetPosition(1,7);
+			LCD_voidSendString("SPI2:    ");
+			LCD_voidSetPosition(1,13);
+			LCD_voidSendNumber(Temp_2);
+		}
+	}
+	return 0;
+}
+
+
