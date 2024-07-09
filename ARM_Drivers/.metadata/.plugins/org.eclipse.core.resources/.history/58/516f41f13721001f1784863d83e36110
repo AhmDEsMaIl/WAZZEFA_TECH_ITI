@@ -1,0 +1,25 @@
+#ifndef STK_CONFIG_H_
+#define STK_CONFIG_H_
+
+//clk src AHB   or AHB/8
+
+
+/*
+ * Options:
+ * 1-AHB
+ * 2-AHB_8
+ */
+
+
+#define CLK_SRC   AHB_8
+
+
+
+
+
+
+
+
+
+
+#endif

@@ -1,0 +1,43 @@
+16:19:10 **** Build of configuration Debug for project AVR_Drivers ****
+make all 
+Building file: ../MCAL/DIO/DIO_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/DIO/DIO_Program.d" -MT"MCAL/DIO/DIO_Program.o" -c -o "MCAL/DIO/DIO_Program.o" "../MCAL/DIO/DIO_Program.c"
+Finished building: ../MCAL/DIO/DIO_Program.c
+ 
+Building file: ../HAL/LCD/LCD_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LCD/LCD_Program.d" -MT"HAL/LCD/LCD_Program.o" -c -o "HAL/LCD/LCD_Program.o" "../HAL/LCD/LCD_Program.c"
+In file included from ../HAL/LCD/LCD_Program.c:22:
+g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../HAL/LCD/LCD_Program.c:22:
+g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/LCD_Program.c
+ 
+Building file: ../HAL/KEYPAD/KEYPAD_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/KEYPAD/KEYPAD_Program.d" -MT"HAL/KEYPAD/KEYPAD_Program.o" -c -o "HAL/KEYPAD/KEYPAD_Program.o" "../HAL/KEYPAD/KEYPAD_Program.c"
+../HAL/KEYPAD/KEYPAD_Program.c:20:1: warning: "/*" within comment
+In file included from ../HAL/KEYPAD/KEYPAD_Program.c:25:
+g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../HAL/KEYPAD/KEYPAD_Program.c:25:
+g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/KEYPAD/KEYPAD_Program.c: In function 'KEYPAD_u8GetPressed':
+../HAL/KEYPAD/KEYPAD_Program.c:60: warning: statement with no effect
+Finished building: ../HAL/KEYPAD/KEYPAD_Program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:11:38: error: HAL/LCD/KEYPAD_Interface.h: No such file or directory
+In file included from ../main.c:15:
+g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:15:
+g:/embedded_materials/imt/imt tools/sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+make: *** [main.o] Error 1
+
+16:19:11 Build Finished (took 796ms)
+

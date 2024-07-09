@@ -1,0 +1,60 @@
+/*
+ * MSPI_Private.h
+ *
+ *  Created on: 3 May 2024
+ *      Author: User
+ */
+
+#ifndef MSPI_PRIVATE_H_
+#define MSPI_PRIVATE_H_
+
+#define SPI1_BASE_ADDRESS             0x40013000
+
+typedef struct
+{
+	u32 CR1;
+	u32 CR2;
+	u32 SR;
+	u32 DR;
+}SPI_t;
+
+#define SPI1         ((volatile SPI_t*)SPI1_BASE_ADDRESS)
+
+#define CPHA_BIT               0
+#define CPOL_BIT               1
+#define MSTR_BIT               2
+#define SPI_ENABLE_BIT         6
+#define SPI_ORDER_BIT          7
+
+
+
+#define CPH_WR_FRST    1
+#define CPH_RD_FRST    2
+
+
+#define CPOL_IDLE_HIGH  1
+#define CPOL_IDLE_LOW   2
+
+
+#define MSTR_ENABLED    1
+#define MSTR_DISABLED   2
+
+#define DIV_2        0b000
+#define DIV_4        0b001
+#define DIV_8        0b010
+#define DIV_16       0b100
+#define DIV_32       0b101
+
+
+#define SPI_ENABLED    1
+#define SPI_DISABLED   2
+
+#define LSB_FRST        1
+#define MSB_FRST        2
+
+#define BUSY_FLAG      7
+
+
+
+
+#endif /* MSPI_PRIVATE_H_ */

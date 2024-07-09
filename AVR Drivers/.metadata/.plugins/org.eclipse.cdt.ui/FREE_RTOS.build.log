@@ -1,0 +1,178 @@
+20:09:55 **** Build of configuration Debug for project FREE_RTOS ****
+make all 
+Building file: ../MCAL/WDT/WDT_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/WDT/WDT_Program.d" -MT"MCAL/WDT/WDT_Program.o" -c -o "MCAL/WDT/WDT_Program.o" "../MCAL/WDT/WDT_Program.c"
+Finished building: ../MCAL/WDT/WDT_Program.c
+ 
+Building file: ../MCAL/USART/USART_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/USART/USART_Program.d" -MT"MCAL/USART/USART_Program.o" -c -o "MCAL/USART/USART_Program.o" "../MCAL/USART/USART_Program.c"
+Finished building: ../MCAL/USART/USART_Program.c
+ 
+Building file: ../MCAL/TWI/TWI_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TWI/TWI_Program.d" -MT"MCAL/TWI/TWI_Program.o" -c -o "MCAL/TWI/TWI_Program.o" "../MCAL/TWI/TWI_Program.c"
+Finished building: ../MCAL/TWI/TWI_Program.c
+ 
+Building file: ../MCAL/TIMERS/TIMERS_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMERS/TIMERS_Program.d" -MT"MCAL/TIMERS/TIMERS_Program.o" -c -o "MCAL/TIMERS/TIMERS_Program.o" "../MCAL/TIMERS/TIMERS_Program.c"
+Finished building: ../MCAL/TIMERS/TIMERS_Program.c
+ 
+Building file: ../MCAL/SPI_NEW/SPI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/SPI_NEW/SPI.d" -MT"MCAL/SPI_NEW/SPI.o" -c -o "MCAL/SPI_NEW/SPI.o" "../MCAL/SPI_NEW/SPI.c"
+Finished building: ../MCAL/SPI_NEW/SPI.c
+ 
+Building file: ../MCAL/SPI/SPI_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/SPI/SPI_Program.d" -MT"MCAL/SPI/SPI_Program.o" -c -o "MCAL/SPI/SPI_Program.o" "../MCAL/SPI/SPI_Program.c"
+Finished building: ../MCAL/SPI/SPI_Program.c
+ 
+Building file: ../MCAL/PORT/PORT_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/PORT/PORT_Program.d" -MT"MCAL/PORT/PORT_Program.o" -c -o "MCAL/PORT/PORT_Program.o" "../MCAL/PORT/PORT_Program.c"
+Finished building: ../MCAL/PORT/PORT_Program.c
+ 
+Building file: ../MCAL/LED/LED_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/LED/LED_Program.d" -MT"MCAL/LED/LED_Program.o" -c -o "MCAL/LED/LED_Program.o" "../MCAL/LED/LED_Program.c"
+Finished building: ../MCAL/LED/LED_Program.c
+ 
+Building file: ../MCAL/EXTI/EXTI_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/EXTI/EXTI_Program.d" -MT"MCAL/EXTI/EXTI_Program.o" -c -o "MCAL/EXTI/EXTI_Program.o" "../MCAL/EXTI/EXTI_Program.c"
+Finished building: ../MCAL/EXTI/EXTI_Program.c
+ 
+Building file: ../MCAL/EEPROM/EEPROM_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/EEPROM/EEPROM_Program.d" -MT"MCAL/EEPROM/EEPROM_Program.o" -c -o "MCAL/EEPROM/EEPROM_Program.o" "../MCAL/EEPROM/EEPROM_Program.c"
+In file included from ../MCAL/EEPROM/EEPROM_Program.c:23:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+Finished building: ../MCAL/EEPROM/EEPROM_Program.c
+ 
+Building file: ../MCAL/DIO/DIO_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/DIO/DIO_Program.d" -MT"MCAL/DIO/DIO_Program.o" -c -o "MCAL/DIO/DIO_Program.o" "../MCAL/DIO/DIO_Program.c"
+Finished building: ../MCAL/DIO/DIO_Program.c
+ 
+Building file: ../MCAL/BUZZER/BUZZER_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/BUZZER/BUZZER_Program.d" -MT"MCAL/BUZZER/BUZZER_Program.o" -c -o "MCAL/BUZZER/BUZZER_Program.o" "../MCAL/BUZZER/BUZZER_Program.c"
+Finished building: ../MCAL/BUZZER/BUZZER_Program.c
+ 
+Building file: ../MCAL/ADC/ADC_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/ADC/ADC_Program.d" -MT"MCAL/ADC/ADC_Program.o" -c -o "MCAL/ADC/ADC_Program.o" "../MCAL/ADC/ADC_Program.c"
+Finished building: ../MCAL/ADC/ADC_Program.c
+ 
+Building file: ../HAL/STEPPER/STEPPER_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/STEPPER/STEPPER_Program.d" -MT"HAL/STEPPER/STEPPER_Program.o" -c -o "HAL/STEPPER/STEPPER_Program.o" "../HAL/STEPPER/STEPPER_Program.c"
+In file included from ../HAL/STEPPER/STEPPER_Program.c:21:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+Finished building: ../HAL/STEPPER/STEPPER_Program.c
+ 
+Building file: ../HAL/LM35/LM35_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LM35/LM35_Program.d" -MT"HAL/LM35/LM35_Program.o" -c -o "HAL/LM35/LM35_Program.o" "../HAL/LM35/LM35_Program.c"
+Finished building: ../HAL/LM35/LM35_Program.c
+ 
+Building file: ../HAL/LCD/LCD_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LCD/LCD_Program.d" -MT"HAL/LCD/LCD_Program.o" -c -o "HAL/LCD/LCD_Program.o" "../HAL/LCD/LCD_Program.c"
+In file included from ../HAL/LCD/LCD_Program.c:22:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+Finished building: ../HAL/LCD/LCD_Program.c
+ 
+Building file: ../HAL/KEYPAD/KEYPAD_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/KEYPAD/KEYPAD_Program.d" -MT"HAL/KEYPAD/KEYPAD_Program.o" -c -o "HAL/KEYPAD/KEYPAD_Program.o" "../HAL/KEYPAD/KEYPAD_Program.c"
+In file included from ../HAL/KEYPAD/KEYPAD_Program.c:25:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+Finished building: ../HAL/KEYPAD/KEYPAD_Program.c
+ 
+Building file: ../HAL/DCMOTOR/DCMOTOR_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/DCMOTOR/DCMOTOR_Program.d" -MT"HAL/DCMOTOR/DCMOTOR_Program.o" -c -o "HAL/DCMOTOR/DCMOTOR_Program.o" "../HAL/DCMOTOR/DCMOTOR_Program.c"
+Finished building: ../HAL/DCMOTOR/DCMOTOR_Program.c
+ 
+Building file: ../FREE_RTOS/croutine.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"FREE_RTOS/croutine.d" -MT"FREE_RTOS/croutine.o" -c -o "FREE_RTOS/croutine.o" "../FREE_RTOS/croutine.c"
+Finished building: ../FREE_RTOS/croutine.c
+ 
+Building file: ../FREE_RTOS/heap_1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"FREE_RTOS/heap_1.d" -MT"FREE_RTOS/heap_1.o" -c -o "FREE_RTOS/heap_1.o" "../FREE_RTOS/heap_1.c"
+Finished building: ../FREE_RTOS/heap_1.c
+ 
+Building file: ../FREE_RTOS/list.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"FREE_RTOS/list.d" -MT"FREE_RTOS/list.o" -c -o "FREE_RTOS/list.o" "../FREE_RTOS/list.c"
+Finished building: ../FREE_RTOS/list.c
+ 
+Building file: ../FREE_RTOS/port.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"FREE_RTOS/port.d" -MT"FREE_RTOS/port.o" -c -o "FREE_RTOS/port.o" "../FREE_RTOS/port.c"
+Finished building: ../FREE_RTOS/port.c
+ 
+Building file: ../FREE_RTOS/queue.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"FREE_RTOS/queue.d" -MT"FREE_RTOS/queue.o" -c -o "FREE_RTOS/queue.o" "../FREE_RTOS/queue.c"
+Finished building: ../FREE_RTOS/queue.c
+ 
+Building file: ../FREE_RTOS/tasks.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"FREE_RTOS/tasks.d" -MT"FREE_RTOS/tasks.o" -c -o "FREE_RTOS/tasks.o" "../FREE_RTOS/tasks.c"
+../FREE_RTOS/tasks.c: In function 'xTaskGenericCreate':
+../FREE_RTOS/tasks.c:470: warning: cast from pointer to integer of different size
+../FREE_RTOS/tasks.c:470: warning: cast to pointer from integer of different size
+Finished building: ../FREE_RTOS/tasks.c
+ 
+Building file: ../FREE_RTOS/timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"FREE_RTOS/timers.d" -MT"FREE_RTOS/timers.o" -c -o "FREE_RTOS/timers.o" "../FREE_RTOS/timers.c"
+Finished building: ../FREE_RTOS/timers.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:33:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+../main.c: In function 'BUTTON':
+../main.c:116: warning: passing argument 3 of 'DIO_u8GetPinValue' discards qualifiers from pointer target type
+Finished building: ../main.c
+ 
+Building target: FREE_RTOS.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FREE_RTOS.map -mmcu=atmega32 -o "FREE_RTOS.elf"  ./MCAL/WDT/WDT_Program.o  ./MCAL/USART/USART_Program.o  ./MCAL/TWI/TWI_Program.o  ./MCAL/TIMERS/TIMERS_Program.o  ./MCAL/SPI_NEW/SPI.o  ./MCAL/SPI/SPI_Program.o  ./MCAL/PORT/PORT_Program.o  ./MCAL/LED/LED_Program.o  ./MCAL/EXTI/EXTI_Program.o  ./MCAL/EEPROM/EEPROM_Program.o  ./MCAL/DIO/DIO_Program.o  ./MCAL/BUZZER/BUZZER_Program.o  ./MCAL/ADC/ADC_Program.o  ./HAL/STEPPER/STEPPER_Program.o  ./HAL/LM35/LM35_Program.o  ./HAL/LCD/LCD_Program.o  ./HAL/KEYPAD/KEYPAD_Program.o  ./HAL/DCMOTOR/DCMOTOR_Program.o  ./FREE_RTOS/croutine.o ./FREE_RTOS/heap_1.o ./FREE_RTOS/list.o ./FREE_RTOS/port.o ./FREE_RTOS/queue.o ./FREE_RTOS/tasks.o ./FREE_RTOS/timers.o  ./main.o   
+Finished building target: FREE_RTOS.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FREE_RTOS.elf  >"FREE_RTOS.lss"
+Finished building: FREE_RTOS.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex FREE_RTOS.elf  "FREE_RTOS.hex"
+Finished building: FREE_RTOS.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 FREE_RTOS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   32174 bytes (98.2% Full)
+(.text + .data + .bootloader)
+
+Data:       1506 bytes (73.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:10:00 Build Finished (took 4s.991ms)
+

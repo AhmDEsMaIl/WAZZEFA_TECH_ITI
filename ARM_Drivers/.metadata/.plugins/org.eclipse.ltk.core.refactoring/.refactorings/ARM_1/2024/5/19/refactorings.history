@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ARM_1/include/HAL/HLED_MATRIX&apos; to &apos;HLED_MRX&apos;" description="Rename resource &apos;HLED_MATRIX&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/HAL/HLED_MATRIX" name="HLED_MRX" stamp="1715084020074" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ARM_1/include/HAL/HLED_MRX&apos; to &apos;HLEDMRX&apos;" description="Rename resource &apos;HLED_MRX&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/HAL/HLED_MRX" name="HLEDMRX" stamp="1715084445884" updateReferences="true"/>
+</session>

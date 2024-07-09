@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ARM_1/include/HAL/LCD&apos; to &apos;HLCD&apos;" description="Rename resource &apos;LCD&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/HAL/LCD" name="HLCD" stamp="1713938754843" updateReferences="true"/>
+</session>

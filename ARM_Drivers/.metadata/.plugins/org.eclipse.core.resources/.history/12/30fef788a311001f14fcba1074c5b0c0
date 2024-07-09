@@ -1,0 +1,54 @@
+
+/*										FILE INCLUSION											*/
+/************************************************************************************************/
+/***********************LIB*************************/
+#include "../include/LIB/Std_Types.h"
+#include "../include/LIB/BIT_Math.h"
+#include "../include/MCAL/MSPI/MSPI_Config.h"
+#include "../include/MCAL/MSPI/MSPI_Interface.h"
+#include "../include/MCAL/MSPI/MSPI_Private.h"
+
+
+void SPI_voidInit()
+{
+	//Select Clk Phase
+#if CPHA==CPH_WR_FRST
+	SET_BIT(SPI1->CR1,CPHA_BIT);
+#elif CPHA==CPH_RD_FRST
+	CLR_BIT(SPI1->CR1,CPHA_BIT);
+
+#endif
+	//Select Clk Polarity
+#if CPOL==CPOL_IDLE_HIGH
+	SET_BIT(SPI1->CR1,CPOL_BIT);
+#elif CPOL==CPOL_IDLE_LOW
+	CLR_BIT(SPI1->CR1,CPOL_BIT);
+#endif
+	//Select MSTR Or Slave Mode
+#if MSTR_MODE==MSTR_ENABLED
+	SET_BIT(SPI1->CR1,MSTR_BIT);
+#elif MSTR_MODE==MSTR_DISABLED
+	CLR_BIT(SPI1->CR1,MSTR_BIT);
+#endif
+
+	//Select Pre Scaler
+	SPI1->CR1 &= ~((MASK_VALUE<<3));
+	SPI1->CR1 |= (PRE_SCALER<<3);
+#if SPI_ENABLE_MODE==SPI_ENABLED
+	SET_BIT(SPI1->CR1,SPI_ENABLE_BIT);
+#elif SPI_ENABLE_MODE==SPI_DISABLED
+	CLR_BIT(SPI1->CR1,SPI_ENABLE_BIT);
+
+#endif
+}
+void SPI_voidTranceive(u8 Copy_u8DataSend,u8 *Copy_u8DataReceive)
+{
+	//Write Data to data regiter
+	SPI1->DR=Copy_u8DataSend;
+	//Busy waiting to flag
+	while(GET_BIT(SPI1->SR,BUSY_FLAG)==1);
+	//return data
+	*Copy_u8DataReceive=SPI1->DR;
+
+}
+

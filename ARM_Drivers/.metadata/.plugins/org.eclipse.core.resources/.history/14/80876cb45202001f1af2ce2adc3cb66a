@@ -1,0 +1,47 @@
+
+/****************************LIB***************************/
+#include "../include/LIB/BIT_MATH.h"
+#include "../include/LIB/STD_Types.h"
+
+/****************************MCAL**************************/
+#include "../include/MCAL/MRCC/MRCC_Interface.h"
+#include "../include/MCAL/MGPIO/MGPIO_Interface.h"
+
+
+/****************************HAL**************************/
+#include "../include/HAL/HLCD/LCD_Interface.h"
+#include "../include/HAL/KEYPAD/KEYPAD_Interface.h"
+
+
+
+/*Inclusions*/
+//#include "/delay.h"
+
+
+int main (void)
+{
+	/************** CLK INIT*********/
+	MRCC_voidInit();
+	MRCC_voidEnablePeripheral(RCC_AHB1,RCC_AHB1_GPIOA);
+	MRCC_voidEnablePeripheral(RCC_AHB1,RCC_AHB1_GPIOB);
+	LCD_voidInit();
+	KEYPAD_Init();
+	/************** GPIO INIT*********/
+	/******************** APP ************/
+	LCD_voidSetPosition(1,0);
+	LCD_voidSendString(" Ahmed Ismail ");
+	u8 value=NOTPRESSED;
+	while(1)
+	{
+		value=KEYPAD_u8GetPressed();
+		if(value!=NOTPRESSED)
+		{
+			LCD_voidSetPosition(0,0);
+			LCD_voidSendData(value);
+			value=NOTPRESSED;
+		}
+
+
+	}
+	return 0;
+}

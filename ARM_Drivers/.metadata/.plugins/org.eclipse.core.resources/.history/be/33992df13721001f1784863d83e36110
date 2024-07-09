@@ -1,0 +1,11 @@
+src/HEXPARSING_program.o: ../src/HEXPARSING_program.c \
+ ../include/STD_TYPES.h ../include/BIT_MATH.h ../include/FDI_interface.h \
+ ../include/HEXPARSING_interface.h
+
+../include/STD_TYPES.h:
+
+../include/BIT_MATH.h:
+
+../include/FDI_interface.h:
+
+../include/HEXPARSING_interface.h:

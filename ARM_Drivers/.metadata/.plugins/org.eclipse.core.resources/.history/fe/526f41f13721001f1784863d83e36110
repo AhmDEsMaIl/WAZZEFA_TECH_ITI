@@ -1,0 +1,20 @@
+#ifndef STK_INTERFACE_H_
+#define STK_INTERFACE_H_
+
+
+void STK_voidInit();
+void STK_voidSetBusyWait(u32 Copy_u32Ticks);
+void STK_voidSetSingleInterval(u32 Copy_u32Ticks,void(*Copy_vptr)(void));
+void STK_voidSetPeriodicInterval(u32 Copy_u32Ticks,void(*Copy_vptr)(void));
+u32 STK_u32GetElapsedTime();
+u32 STK_u32GetRemainingTime();
+void STK_voidDelayms(u32 Copy_u32TimeINms);
+void STK_voidDelayus(u32 Copy_u32TimeINus);
+
+
+
+
+
+
+
+#endif

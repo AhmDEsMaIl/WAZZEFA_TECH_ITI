@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1709565923 source:g:\embedded_materials\imt\lab1\main.c
+	<stdio.h>
+	<stdlib.h>
+

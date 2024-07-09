@@ -1,0 +1,123 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 3, 2024
+ *      Author: ahmed
+ */
+
+/****************************LIB***************************/
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_Types.h"
+
+/****************************MCAL**************************/
+
+#include "MCAL/DIO/DIO_Interface.h"
+#include "MCAL/EXTI/EXTI_Interface.h"
+#include "MCAL/USART/USART_Interface.h"
+#include "MCAL/WDT/WDT_Interface.h"
+#include "MCAL/SPI/SPI_Interface.h"
+#include "MCAL/SPI_NEW/SPI.h"
+#include "MCAL/EEPROM/EEPROM_Interface.h"
+#include "MCAL/ADC/ADC_Interface.h"
+
+/****************************HAL**************************/
+
+#include"HAL/KEYPAD/KEYPAD_Interface.h"
+#include"HAL/LCD/LCD_Interface.h"
+#include "HAL/DCMOTOR/DCMOTOR_Interface.h"
+#include "HAL/LCD/LCD_Interface.h"
+#include "HAL/LM35/LM35_Interface.h"
+
+
+/*Inclusions*/
+#include "avr/delay.h"
+
+
+/****************************************************************************/
+/*							    FREE_RTOS LAB 01		   		  			*/
+/****************************************************************************/
+/****************************************************************************/
+/*								FILES INCLUSIONS							*/
+/****************************************************************************/
+/*************************************LIB************************************/
+
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_Types.h"
+
+
+/************************************MCAL************************************/
+#include "MCAL/PORT/PORT_Interface.h"
+#include "MCAL/DIO/DIO_Interface.h"
+
+/*************************************HAL************************************/
+
+
+/***********************************FREERTOS*********************************/
+#include "FREE_RTOS/FreeRTOS.h"
+#include "FREE_RTOS/task.h"
+
+
+/****************************************************************************/
+/*GLOBAL VARIABLES*/
+
+
+/*TASKS PROTOTYPES*/
+void TEMP1(void *pv);
+//void TEMP2(void *pv);
+
+
+
+/****************************************************************************/
+/*ENTRY POINT <main>*/
+int main(void)
+{
+	/*MODULES INITIALIZATIONS*/
+	PORT_voidInit();
+	LM35_voidInit();
+	LCD_voidInit();
+	/*TASKS CREATION*/
+	xTaskCreate(&TEMP1,NULL,800,NULL,0,NULL);
+	//xTaskCreate(&TEMP2,NULL,400,NULL,0,NULL);
+
+	/*START SCHEDULING*/
+	vTaskStartScheduler();
+	while(1)
+	{
+
+	}
+
+
+	return 0;
+}
+
+
+
+/****************************************************************************/
+/*TASKS DEFINITIONS*/
+void TEMP1(void *pv)
+{
+	u16 Reading_1 = 0;
+	while(1)
+	{
+		LCD_voidSetPosition(0,0);
+		LCD_voidSendString((u8)"TEMP1:");
+		vTaskDelay(1000);
+	}
+}
+/*
+void TEMP2(void *pv)
+{
+
+	u16 Reading_2 = 0;
+	while(1)
+	{
+		/*LCD_voidSetPosition(1,0);
+		LCD_voidSendString((u8)"TEMP2:");
+		Reading_2=LM35_u16GetTempReading(CHANNEL1);
+		LCD_voidSendNumber(Reading_2);
+		vTaskDelay(2000);
+	}
+
+}
+
+*/

@@ -1,0 +1,48 @@
+* main.c
+
+
+ *
+ *  Created on: Mar 20, 2024
+ *      Author: ahmed
+ */
+/****************************LIB***************************/
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_Types.h"
+
+/****************************MCAL**************************/
+#include "MCAL/DIO/DIO_Interface.h"
+/****************************HAL**************************/
+
+#include"HAL/KEYPAD/KEYPAD_Interface.h"
+#include"HAL/LCD/LCD_Interface.h"
+
+/*Inclusions*/
+#include "avr/delay.h"
+
+
+
+int main (void)
+{
+	LCD_voidInit();
+	KEYPAD_Init();
+	u8 Local=NOTPRESSED;
+	while(1)
+	{
+
+		Local=KEYPAD_u8GetPressed();
+		if(Local!=NOTPRESSED)
+		{
+			LCD_voidSendData(Local);
+			if(Local=='?')
+			{
+				LCD_voidClearScreen();
+				LCD_voidSetPosition(LCD_ROW0,LCD_COLUMN0);
+			}
+			Local=NOTPRESSED;
+		}
+
+
+	}
+	return 0;
+}
+

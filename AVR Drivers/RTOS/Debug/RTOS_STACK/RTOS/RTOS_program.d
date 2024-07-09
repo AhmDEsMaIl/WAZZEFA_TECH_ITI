@@ -1,0 +1,23 @@
+RTOS_STACK/RTOS/RTOS_program.o RTOS_STACK/RTOS/RTOS_program.o:  \
+ ../RTOS_STACK/RTOS/RTOS_program.c \
+  ../RTOS_STACK/RTOS/../../LIB/BIT_MATH.h \
+  ../RTOS_STACK/RTOS/../../LIB/STD_Types.h \
+  ../RTOS_STACK/RTOS/../../RTOS_STACK/GIE/GIE_Interface.h \
+  ../RTOS_STACK/RTOS/../../RTOS_STACK/RTOS/RTOS_Config.h \
+  ../RTOS_STACK/RTOS/../../RTOS_STACK/RTOS/RTOS_Interface.h \
+  ../RTOS_STACK/RTOS/../../RTOS_STACK/RTOS/RTOS_Private.h \
+  ../RTOS_STACK/RTOS/../../RTOS_STACK/TIMER0/TIMERS_Interface.h
+
+../RTOS_STACK/RTOS/../../LIB/BIT_MATH.h:
+
+../RTOS_STACK/RTOS/../../LIB/STD_Types.h:
+
+../RTOS_STACK/RTOS/../../RTOS_STACK/GIE/GIE_Interface.h:
+
+../RTOS_STACK/RTOS/../../RTOS_STACK/RTOS/RTOS_Config.h:
+
+../RTOS_STACK/RTOS/../../RTOS_STACK/RTOS/RTOS_Interface.h:
+
+../RTOS_STACK/RTOS/../../RTOS_STACK/RTOS/RTOS_Private.h:
+
+../RTOS_STACK/RTOS/../../RTOS_STACK/TIMER0/TIMERS_Interface.h:

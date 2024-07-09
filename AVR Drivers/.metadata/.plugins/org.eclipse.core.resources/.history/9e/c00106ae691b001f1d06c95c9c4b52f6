@@ -1,0 +1,59 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 8, 2024
+ *      Author: ahmed
+ */
+/****************************LIB***************************/
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_Types.h"
+
+/****************************MCAL**************************/
+#include "MCAL/DIO/DIO_Interface.h"
+#include "MCAL/TIMERS/TIMERS_Interface.h"
+#include "MCAL/GIE/GIE_Interface.h"
+#include "MCAL/EXTI/EXTI_Interface.h"
+#include "MCAL/USART/USART_Interface.h"
+#include "MCAL/SPI/SPI_Interface.h"
+#include "MCAL/SPI_NEW/SPI.h"
+#include "MCAL/TWI/TWI_Interface.h"
+#include "MCAL/EEPROM/EEPROM_Interface.h"
+#include "MCAL/ADC/ADC_Interface.h"
+
+/****************************HAL**************************/
+#include"HAL/KEYPAD/KEYPAD_Interface.h"
+#include"HAL/LCD/LCD_Interface.h"
+#include "HAL/DCMOTOR/DCMOTOR_Interface.h"
+#include "HAL/LCD/LCD_Interface.h"
+#include "HAL/LM35/LM35_Interface.h"
+
+
+/*Inclusions*/
+#include "avr/delay.h"
+u8 arr[]={}
+int main(void)
+{
+	/*************************************************************/
+	/*				         2- PIN SETUB				         */
+	/*************************************************************/
+	DIO_u8SetPinDirection(DIO_PORTD,DIO_PIN0,DIO_PIN_OUTPUT);
+	DIO_u8SetPinDirection(DIO_PORTD,DIO_PIN1,DIO_PIN_OUTPUT);
+
+
+	/*************************************************************/
+	/*				 1- MODULES INITIALIZATION				     */
+	/*************************************************************/
+	USART_voidInit();
+	/*************************************************************/
+	/*				    3- SET CALLBACK FUNCTION				 */
+	/*************************************************************/
+	/***************************************************************/
+	u8 Recvice=0;
+	while(1)
+	{
+		USART_u8SendData();
+	}
+	return 0;
+}
+
+

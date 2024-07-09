@@ -1,0 +1,168 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 3, 2024
+ *      Author: ahmed
+ */
+
+/****************************LIB***************************/
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_Types.h"
+
+/****************************MCAL**************************/
+
+#include "MCAL/DIO/DIO_Interface.h"
+#include "MCAL/TIMERS/TIMERS_Interface.h"
+#include "MCAL/GIE/GIE_Interface.h"
+#include "MCAL/EXTI/EXTI_Interface.h"
+#include "MCAL/USART/USART_Interface.h"
+#include "MCAL/WDT/WDT_Interface.h"
+#include "MCAL/SPI/SPI_Interface.h"
+#include "MCAL/SPI_NEW/SPI.h"
+#include "MCAL/EEPROM/EEPROM_Interface.h"
+
+/****************************HAL**************************/
+
+#include"HAL/KEYPAD/KEYPAD_Interface.h"
+#include"HAL/LCD/LCD_Interface.h"
+#include "HAL/DCMOTOR/DCMOTOR_Interface.h"
+#include "HAL/LCD/LCD_Interface.h"
+#include "HAL/LM35/LM35_Interface.h"
+
+
+/*Inclusions*/
+#include "avr/delay.h"
+
+u8 volatile WAIT=0;
+u8 volatile c1=2;
+u8 volatile c2=2;
+void Timer0_Func(void)
+{
+	static u8 c=0;
+	LCD_voidSetPosition(1,0);
+	LCD_voidSendString("Wait 5 Sec  ");
+	if(c==10)
+	{
+		Timer0_Interrupt_voidDisable();
+		WAIT=0;
+		c1++;
+		c2=1;
+	}
+	c++;
+
+}
+
+int main(void)
+{
+	/*************************************************************/
+	/*				         2- PIN SETUB				         */
+	/*************************************************************/
+
+	/*************************************************************/
+	/*				 1- MODULES INITIALIZATION				     */
+	/*************************************************************/
+	GIE_voidDisable();
+	Timer0_Interrupt_voidDisable();
+	LCD_voidInit();
+	KEYPAD_Init();
+	TIMER0_voidInit();
+	EEPROM_voidInit();
+	/*************************************************************/
+	/*				    3- SET CALLBACK FUNCTION				 */
+	/*************************************************************/
+	TIMER_u8SetCallBack(Timer0_Func,TIMER0_OVF_VECTOR_ID);
+	/***************************************************************/
+	u8 arr[2]={0,0};
+	u16 * P_READ=0;
+	u8 Local=0;
+	u16 Numb=0,Pass=0;
+	u8 Flag=0,Local_u8ReadData;
+	LCD_voidSendString("CREATE PASS:");
+	LCD_voidSetPosition(1,4);
+	while(1)
+	{
+
+		Local=KEYPAD_u8GetPressed();
+		if(Local!=NOTPRESSED)
+		{
+			if(Local>='0' && Local<='9')
+			{
+				Numb=Numb*10+(Local-'0');
+				LCD_voidSendData('*');
+			}
+			if(Local=='=')
+			{
+				if(Flag==0)
+				{
+					LCD_voidClearScreen();
+					LCD_voidSetPosition(0,0);
+					LCD_voidSendString("Your Pass Done  ");
+					_delay_ms(3000);
+					LCD_voidSetPosition(0,0);
+					LCD_voidSendString("PLZ Enter PASS  ");
+					EEPROM_voidSendDataByte(Numb,0);
+					EEPROM_voidSendDataByte(Numb>>8,1);
+					EEPROM_voidInit();
+					LCD_voidSetPosition(1,4);
+					Flag=1;
+				}
+				else if(Flag==1)
+				{
+					/*Read from EEPROM*/
+					arr[0] = EEPROM_u8ReadDataByte(0);
+					arr[1] = EEPROM_u8ReadDataByte(1);
+					P_READ=arr;
+					Pass=*P_READ;
+					if(Numb==Pass)
+					{
+						LCD_voidClearScreen();
+						LCD_voidSetPosition(0,0);
+						LCD_voidSendString("Your Pass OK :)  ");
+
+					}
+					else
+					{
+						LCD_voidClearScreen();
+						c2++;
+						LCD_voidSetPosition(0,0);
+						LCD_voidSendString("Your Pass N_OK  ");
+						_delay_ms(3000);
+						LCD_voidSetPosition(0,0);
+						LCD_voidSendString("PLZ Enter PASS         ");
+						LCD_voidSetPosition(1,4);
+
+					}
+
+
+				}
+				Numb=0;
+			}
+			Local=NOTPRESSED;
+		}
+
+
+		if(c2==3)
+		{
+
+			LCD_voidSetPosition(0,0);
+			LCD_voidSendString("Your Pass N_OK  ");
+			GIE_voidEnable();
+			Timer0_Interrupt_voidEnable();
+			WAIT=1;
+			while(WAIT);
+			if(c1==3)
+			{
+				LCD_voidSetPosition(0,0);
+				LCD_voidSendString("Your SYS BLOCKED");
+				LCD_voidSetPosition(1,0);
+				LCD_voidSendString("RESET IT !");
+				while(1);
+			}
+			/*LCD_voidClearScreen();
+			LCD_voidSetPosition(0,0);
+			LCD_voidSendString("PLZ Enter PASS         ");
+			LCD_voidSetPosition(1,4);*/
+		}
+	}
+	return 0;
+}

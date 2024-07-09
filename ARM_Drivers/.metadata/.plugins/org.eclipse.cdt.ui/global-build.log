@@ -1,0 +1,287 @@
+02:17:03 **** Build of configuration Debug for project ARM_BootLoader ****
+make all 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal.o" "../system/src/stm32f4-hal/stm32f4xx_hal.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal.c
+ 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_cortex.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_cortex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_cortex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_cortex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_cortex.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_cortex.c
+ 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o" "../system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.c
+ 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_flash.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_flash.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_flash.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_flash.o" "../system/src/stm32f4-hal/stm32f4xx_hal_flash.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_flash.c
+ 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_gpio.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_gpio.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_gpio.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_gpio.o" "../system/src/stm32f4-hal/stm32f4xx_hal_gpio.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_gpio.c
+ 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_iwdg.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_iwdg.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o" "../system/src/stm32f4-hal/stm32f4xx_hal_iwdg.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_iwdg.c
+ 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_pwr.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_pwr.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_pwr.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_pwr.o" "../system/src/stm32f4-hal/stm32f4xx_hal_pwr.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_pwr.c
+ 
+Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_rcc.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-bad-function-cast -Wno-conversion -Wno-sign-conversion -Wno-unused-parameter -Wno-sign-compare -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_rcc.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_rcc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_rcc.o" "../system/src/stm32f4-hal/stm32f4xx_hal_rcc.c"
+Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_rcc.c
+ 
+Building file: ../system/src/newlib/_cxx.cpp
+Invoking: Cross ARM GNU C++ Compiler
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -MMD -MP -MF"system/src/newlib/_cxx.d" -MT"system/src/newlib/_cxx.o" -c -o "system/src/newlib/_cxx.o" "../system/src/newlib/_cxx.cpp"
+Finished building: ../system/src/newlib/_cxx.cpp
+ 
+Building file: ../system/src/newlib/_exit.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/newlib/_exit.d" -MT"system/src/newlib/_exit.o" -c -o "system/src/newlib/_exit.o" "../system/src/newlib/_exit.c"
+Finished building: ../system/src/newlib/_exit.c
+ 
+Building file: ../system/src/newlib/_sbrk.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/newlib/_sbrk.d" -MT"system/src/newlib/_sbrk.o" -c -o "system/src/newlib/_sbrk.o" "../system/src/newlib/_sbrk.c"
+Finished building: ../system/src/newlib/_sbrk.c
+ 
+Building file: ../system/src/newlib/_startup.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -DOS_INCLUDE_STARTUP_INIT_MULTIPLE_RAM_SECTIONS -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/newlib/_startup.d" -MT"system/src/newlib/_startup.d" -c -o "system/src/newlib/_startup.o" "../system/src/newlib/_startup.c"
+Finished building: ../system/src/newlib/_startup.c
+ 
+Building file: ../system/src/newlib/_syscalls.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/newlib/_syscalls.d" -MT"system/src/newlib/_syscalls.o" -c -o "system/src/newlib/_syscalls.o" "../system/src/newlib/_syscalls.c"
+Finished building: ../system/src/newlib/_syscalls.c
+ 
+Building file: ../system/src/newlib/assert.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/newlib/assert.d" -MT"system/src/newlib/assert.o" -c -o "system/src/newlib/assert.o" "../system/src/newlib/assert.c"
+Finished building: ../system/src/newlib/assert.c
+ 
+Building file: ../system/src/diag/Trace.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/diag/Trace.d" -MT"system/src/diag/Trace.o" -c -o "system/src/diag/Trace.o" "../system/src/diag/Trace.c"
+Finished building: ../system/src/diag/Trace.c
+ 
+Building file: ../system/src/diag/trace_impl.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/diag/trace_impl.d" -MT"system/src/diag/trace_impl.o" -c -o "system/src/diag/trace_impl.o" "../system/src/diag/trace_impl.c"
+Finished building: ../system/src/diag/trace_impl.c
+ 
+Building file: ../system/src/cortexm/_initialize_hardware.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_initialize_hardware.d" -MT"system/src/cortexm/_initialize_hardware.o" -c -o "system/src/cortexm/_initialize_hardware.o" "../system/src/cortexm/_initialize_hardware.c"
+Finished building: ../system/src/cortexm/_initialize_hardware.c
+ 
+Building file: ../system/src/cortexm/_reset_hardware.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_reset_hardware.d" -MT"system/src/cortexm/_reset_hardware.o" -c -o "system/src/cortexm/_reset_hardware.o" "../system/src/cortexm/_reset_hardware.c"
+Finished building: ../system/src/cortexm/_reset_hardware.c
+ 
+Building file: ../system/src/cortexm/exception_handlers.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/cortexm/exception_handlers.d" -MT"system/src/cortexm/exception_handlers.o" -c -o "system/src/cortexm/exception_handlers.o" "../system/src/cortexm/exception_handlers.c"
+Finished building: ../system/src/cortexm/exception_handlers.c
+ 
+Building file: ../system/src/cmsis/system_stm32f4xx.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/cmsis/system_stm32f4xx.d" -MT"system/src/cmsis/system_stm32f4xx.o" -c -o "system/src/cmsis/system_stm32f4xx.o" "../system/src/cmsis/system_stm32f4xx.c"
+Finished building: ../system/src/cmsis/system_stm32f4xx.c
+ 
+Building file: ../system/src/cmsis/vectors_stm32f401xc.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/cmsis/vectors_stm32f401xc.d" -MT"system/src/cmsis/vectors_stm32f401xc.o" -c -o "system/src/cmsis/vectors_stm32f401xc.o" "../system/src/cmsis/vectors_stm32f401xc.c"
+Finished building: ../system/src/cmsis/vectors_stm32f401xc.c
+ 
+Building file: ../src/HDAC_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/HDAC_Program.d" -MT"src/HDAC_Program.o" -c -o "src/HDAC_Program.o" "../src/HDAC_Program.c"
+Finished building: ../src/HDAC_Program.c
+ 
+Building file: ../src/HEXPARSING_program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/HEXPARSING_program.d" -MT"src/HEXPARSING_program.o" -c -o "src/HEXPARSING_program.o" "../src/HEXPARSING_program.c"
+Finished building: ../src/HEXPARSING_program.c
+ 
+Building file: ../src/HIR_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/HIR_Program.d" -MT"src/HIR_Program.o" -c -o "src/HIR_Program.o" "../src/HIR_Program.c"
+Finished building: ../src/HIR_Program.c
+ 
+Building file: ../src/HLEDMRX_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/HLEDMRX_Program.d" -MT"src/HLEDMRX_Program.o" -c -o "src/HLEDMRX_Program.o" "../src/HLEDMRX_Program.c"
+Finished building: ../src/HLEDMRX_Program.c
+ 
+Building file: ../src/HS2P_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/HS2P_Program.d" -MT"src/HS2P_Program.o" -c -o "src/HS2P_Program.o" "../src/HS2P_Program.c"
+Finished building: ../src/HS2P_Program.c
+ 
+Building file: ../src/KEYPAD_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/KEYPAD_Program.d" -MT"src/KEYPAD_Program.o" -c -o "src/KEYPAD_Program.o" "../src/KEYPAD_Program.c"
+Finished building: ../src/KEYPAD_Program.c
+ 
+Building file: ../src/LCD_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/LCD_Program.d" -MT"src/LCD_Program.o" -c -o "src/LCD_Program.o" "../src/LCD_Program.c"
+Finished building: ../src/LCD_Program.c
+ 
+Building file: ../src/MDMA_Proram.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MDMA_Proram.d" -MT"src/MDMA_Proram.o" -c -o "src/MDMA_Proram.o" "../src/MDMA_Proram.c"
+../src/MDMA_Proram.c:22:23: warning: 'DMA1_setCallBack' defined but not used [-Wunused-variable]
+ static PtrToFunc_void DMA1_setCallBack[8];
+                       ^~~~~~~~~~~~~~~~
+Finished building: ../src/MDMA_Proram.c
+ 
+Building file: ../src/MEXTI_Config.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MEXTI_Config.d" -MT"src/MEXTI_Config.o" -c -o "src/MEXTI_Config.o" "../src/MEXTI_Config.c"
+Finished building: ../src/MEXTI_Config.c
+ 
+Building file: ../src/MEXTI_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MEXTI_Program.d" -MT"src/MEXTI_Program.o" -c -o "src/MEXTI_Program.o" "../src/MEXTI_Program.c"
+Finished building: ../src/MEXTI_Program.c
+ 
+Building file: ../src/MFDI_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MFDI_Program.d" -MT"src/MFDI_Program.o" -c -o "src/MFDI_Program.o" "../src/MFDI_Program.c"
+Finished building: ../src/MFDI_Program.c
+ 
+Building file: ../src/MGPIO_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MGPIO_Program.d" -MT"src/MGPIO_Program.o" -c -o "src/MGPIO_Program.o" "../src/MGPIO_Program.c"
+../src/MGPIO_Program.c: In function 'MGPIO_voidSetPinAlternateFunctionMode':
+../src/MGPIO_Program.c:390:18: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   if( (copyu8Pin >= GPIO_PIN0) && (copyu8Pin <= GPIO_PIN7) )
+                  ^~
+Finished building: ../src/MGPIO_Program.c
+ 
+Building file: ../src/MNVIC_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MNVIC_Program.d" -MT"src/MNVIC_Program.o" -c -o "src/MNVIC_Program.o" "../src/MNVIC_Program.c"
+Finished building: ../src/MNVIC_Program.c
+ 
+Building file: ../src/MRCC_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MRCC_Program.d" -MT"src/MRCC_Program.o" -c -o "src/MRCC_Program.o" "../src/MRCC_Program.c"
+Finished building: ../src/MRCC_Program.c
+ 
+Building file: ../src/MSPI_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MSPI_Program.d" -MT"src/MSPI_Program.o" -c -o "src/MSPI_Program.o" "../src/MSPI_Program.c"
+../src/MSPI_Program.c: In function 'MSPI_voidTranceive':
+../src/MSPI_Program.c:196:6: warning: unused variable 'Local_uint32TimeoutCounter' [-Wunused-variable]
+  u32 Local_uint32TimeoutCounter = 0 ;
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/MSPI_Program.c
+ 
+Building file: ../src/MSTK_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MSTK_Program.d" -MT"src/MSTK_Program.o" -c -o "src/MSTK_Program.o" "../src/MSTK_Program.c"
+../src/MSTK_Program.c: In function 'MSYSTICK_GetPeriod':
+../src/MSTK_Program.c:66:6: warning: variable 'AHB_Clock' set but not used [-Wunused-but-set-variable]
+  u32 AHB_Clock=0;
+      ^~~~~~~~~
+../src/MSTK_Program.c: In function 'SysTick_Handler':
+../src/MSTK_Program.c:348:6: warning: variable 'Local_u8StateFlag' set but not used [-Wunused-but-set-variable]
+   u8 Local_u8StateFlag = 0;
+      ^~~~~~~~~~~~~~~~~
+Finished building: ../src/MSTK_Program.c
+ 
+Building file: ../src/MTFT_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MTFT_Program.d" -MT"src/MTFT_Program.o" -c -o "src/MTFT_Program.o" "../src/MTFT_Program.c"
+Finished building: ../src/MTFT_Program.c
+ 
+Building file: ../src/MUART_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MUART_Program.d" -MT"src/MUART_Program.o" -c -o "src/MUART_Program.o" "../src/MUART_Program.c"
+Finished building: ../src/MUART_Program.c
+ 
+Building file: ../src/SRTOS_Program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SRTOS_Program.d" -MT"src/SRTOS_Program.o" -c -o "src/SRTOS_Program.o" "../src/SRTOS_Program.c"
+Finished building: ../src/SRTOS_Program.c
+ 
+Building file: ../src/_initialize_hardware.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/_initialize_hardware.d" -MT"src/_initialize_hardware.o" -c -o "src/_initialize_hardware.o" "../src/_initialize_hardware.c"
+../src/_initialize_hardware.c: In function 'SystemClock_Config':
+../src/_initialize_hardware.c:126:2: warning: #warning "Please check if the SystemClock_Config() settings match your board!" [-Wcpp]
+ #warning "Please check if the SystemClock_Config() settings match your board!"
+  ^~~~~~~
+Finished building: ../src/_initialize_hardware.c
+ 
+Building file: ../src/_write.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/_write.d" -MT"src/_write.o" -c -o "src/_write.o" "../src/_write.c"
+Finished building: ../src/_write.c
+ 
+Building file: ../src/main.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:90:40: warning: passing argument 1 of 'UART_u8ReadDataSynch' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   LOC_u8RecStatus=UART_u8ReadDataSynch(&ReceiveBuffer[u8RecCounter]);
+                                        ^
+In file included from ../src/main.c:18:0:
+../src/../include/MCAL/MUART/MUART_Interface.h:16:4: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'volatile u8 * {aka volatile unsigned char *}'
+ u8 UART_u8ReadDataSynch(u8 *Copy_u8DataCome);
+    ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:106:22: warning: passing argument 1 of 'PARSE_voidRecord' from incompatible pointer type [-Wincompatible-pointer-types]
+     PARSE_voidRecord(&ReceiveBuffer);
+                      ^
+In file included from ../src/main.c:40:0:
+../src/../include/APP/HEXPARSING/HEXPARSING_Interface.h:7:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'volatile u8 (*)[100] {aka volatile unsigned char (*)[100]}'
+ void PARSE_voidRecord(u8 *Copy_u8Record);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:108:25: warning: pointer targets in passing argument 1 of 'UART_voidSendString' differ in signedness [-Wpointer-sign]
+     UART_voidSendString("ok");
+                         ^~~~
+In file included from ../src/main.c:18:0:
+../src/../include/MCAL/MUART/MUART_Interface.h:24:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ void UART_voidSendString(u8 *ptr);
+      ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:40:0:
+../src/main.c: At top level:
+../src/../include/APP/HEXPARSING/HEXPARSING_Interface.h:5:11: warning: 'ASCI_voidToHex' declared 'static' but never defined [-Wunused-function]
+ static u8 ASCI_voidToHex(u8 Copy_u8Asci);
+           ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32f4xx_hal_msp.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"src/stm32f4xx_hal_msp.d" -MT"src/stm32f4xx_hal_msp.d" -c -o "src/stm32f4xx_hal_msp.o" "../src/stm32f4xx_hal_msp.c"
+Finished building: ../src/stm32f4xx_hal_msp.c
+ 
+Building target: ARM_BootLoader.elf
+Invoking: Cross ARM GNU C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"ARM_BootLoader.map" --specs=nano.specs -o "ARM_BootLoader.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/HDAC_Program.o ./src/HEXPARSING_program.o ./src/HIR_Program.o ./src/HLEDMRX_Program.o ./src/HS2P_Program.o ./src/KEYPAD_Program.o ./src/LCD_Program.o ./src/MDMA_Proram.o ./src/MEXTI_Config.o ./src/MEXTI_Program.o ./src/MFDI_Program.o ./src/MGPIO_Program.o ./src/MNVIC_Program.o ./src/MRCC_Program.o ./src/MSPI_Program.o ./src/MSTK_Program.o ./src/MTFT_Program.o ./src/MUART_Program.o ./src/SRTOS_Program.o ./src/_initialize_hardware.o ./src/_write.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
+Finished building target: ARM_BootLoader.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O ihex "ARM_BootLoader.elf"  "ARM_BootLoader.hex"
+Finished building: ARM_BootLoader.hex
+ 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "ARM_BootLoader.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9615	    168	    836	  10619	   297b	ARM_BootLoader.elf
+Finished building: ARM_BootLoader.siz
+ 

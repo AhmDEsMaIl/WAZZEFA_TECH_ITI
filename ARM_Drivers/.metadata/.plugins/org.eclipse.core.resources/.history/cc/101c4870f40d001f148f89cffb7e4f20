@@ -1,0 +1,22 @@
+/*
+ * MUSART_Interface.h
+ *
+ *  Created on: 8 May 2024
+ *      Author: User
+ */
+
+#ifndef MUSART_INTERFACE_H_
+#define MUSART_INTERFACE_H_
+/************************************************************************************************/
+/*									FUNCTIONS API's												*/
+/************************************************************************************************/
+
+
+void MUSART_voidInit(void);
+void MUSART_voidSendByteSynch(u8 copy_u8Data);
+void MUSART_voidReceiveByte(u8* copy_u8Data);
+
+void MUSART_voidSentString(u8* copy_u8Data);
+void MUSART_voidReceiveString(u8* copy_u8Data);
+
+#endif /* MUSART_INTERFACE_H_ */

@@ -1,0 +1,13 @@
+src/FDI_program.o: ../src/FDI_program.c ../include/STD_TYPES.h \
+ ../include/BIT_MATH.h ../include/FDI_interface.h \
+ ../include/FDI_private.h ../include/FDI_config.h
+
+../include/STD_TYPES.h:
+
+../include/BIT_MATH.h:
+
+../include/FDI_interface.h:
+
+../include/FDI_private.h:
+
+../include/FDI_config.h:

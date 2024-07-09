@@ -1,0 +1,24 @@
+if(f==0)
+		{
+			LCD_voidSendString("MOTOR CCW");
+			MOTOR_voidCounterClockwise();
+			_delay_ms(3000);
+			LCD_voidClearScreen();
+			f=1;
+		}
+		if (f==1)
+		{
+			LCD_voidSendString("MOTOR CW");
+			MOTOR_voidClockwise();
+			_delay_ms(3000);
+			LCD_voidClearScreen();
+			f=2;
+		}
+		if (f==2)
+		{
+			LCD_voidSendString("MOTOR Stop");
+			MOTOR_voidStop();
+			_delay_ms(3000);
+			LCD_voidClearScreen();
+			f=0;
+		}

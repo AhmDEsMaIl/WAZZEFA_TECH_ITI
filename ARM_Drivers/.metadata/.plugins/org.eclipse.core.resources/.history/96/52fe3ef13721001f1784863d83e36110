@@ -1,0 +1,11 @@
+#ifndef FDI_INTERFACE_H_
+#define FDI_INTERFACE_H_
+
+void FDI_voidEraseSector(u8 Copy_u8SectorNum);
+
+void FDI_voidEraseAppSector(void);
+
+void FDI_voidWrite(u32 Copy_u32Address,u16 *ptr,u8 Copy_u8Length);
+
+
+#endif

@@ -1,0 +1,16 @@
+/*
+ * MSPI_Interface.h
+ *
+ *  Created on: 3 May 2024
+ *      Author: User
+ */
+
+#ifndef MSPI_INTERFACE_H_
+#define MSPI_INTERFACE_H_
+
+
+
+void SPI_voidInit();
+void SPI_voidTranceive(u8 Copy_u8DataSend,u8 *Copy_u8DataReceive);
+
+#endif /* MSPI_INTERFACE_H_ */

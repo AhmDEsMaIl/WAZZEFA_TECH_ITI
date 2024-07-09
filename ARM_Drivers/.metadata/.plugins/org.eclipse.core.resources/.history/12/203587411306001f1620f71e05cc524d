@@ -1,0 +1,22 @@
+/*
+ * STK_Config.h
+ *
+ *  Created on: Apr 29, 2024
+ *      Author: ahmed
+ */
+
+#ifndef STK_CONFIG_H_
+#define STK_CONFIG_H_
+
+/*
+ * Options
+ * 1-AHB
+ * 2-AHB_8
+ */
+#define AHB        1
+#define ABB_8      2
+
+#define CLK_SRC  AHB
+
+
+#endif /* STK_CONFIG_H_ */

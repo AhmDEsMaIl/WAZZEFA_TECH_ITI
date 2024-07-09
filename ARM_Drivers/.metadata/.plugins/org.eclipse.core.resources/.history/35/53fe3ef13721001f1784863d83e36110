@@ -1,0 +1,25 @@
+#ifndef FDI_PRIVATE_H_
+#define FDI_PRIVATE_H_
+
+
+
+#define FDI_BASE_ADDRESS          0X40023C00
+
+#define KEY1              0x45670123
+#define KEY2              0xCDEF89AB
+
+#define HALF_WORD              1
+
+typedef struct
+{
+	u32 AICR;
+	u32 KEYR;
+	u32 OPTKEYR;
+	u32 SR;
+	u32 CR;
+	u32 OPTCR;
+
+}FDI_t;
+
+#define FDI     ((volatile FDI_t*)FDI_BASE_ADDRESS)
+#endif

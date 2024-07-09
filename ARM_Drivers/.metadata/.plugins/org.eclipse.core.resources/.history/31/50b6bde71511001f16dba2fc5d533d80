@@ -1,0 +1,22 @@
+/*
+ * HSPI_Private.h
+ *
+ *  Created on: May 13, 2024
+ *      Author: ahmed
+ */
+
+#ifndef HSPI_PRIVATE_H_
+#define HSPI_PRIVATE_H_
+
+#define  SPI_BASE_ADDRESS                  0x40013000
+typedef struct 
+{
+	u32 CR1;
+	u32 CR2;
+	u32 SR;
+	u32 DR;
+}SPI_t;
+
+#define SPI              ((volatile SPI_t *) SPI_BASE_ADDRESS)
+
+#endif /* HSPI_PRIVATE_H_ */

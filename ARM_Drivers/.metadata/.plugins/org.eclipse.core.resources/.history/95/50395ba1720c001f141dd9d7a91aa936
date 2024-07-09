@@ -1,0 +1,17 @@
+/*
+ * HLEDMRX_Private.h
+ *
+ *  Created on: May 7, 2024
+ *      Author: mahmo
+ */
+
+#ifndef HLEDMRX_PRIVATE_H_
+#define HLEDMRX_PRIVATE_H_
+
+//Disable Columns -> Activate Required Columns
+void HLEDMRX_voidDisableColumns(void);
+void HLEDMRX_u8GetRowValue(u8 Copy_u8RowValue);
+
+
+
+#endif /* HLEDMRX_PRIVATE_H_ */

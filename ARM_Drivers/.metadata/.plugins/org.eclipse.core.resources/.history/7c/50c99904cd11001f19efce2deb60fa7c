@@ -1,0 +1,33 @@
+/*
+ * MTFT_Program.c
+ *
+ *  Created on: May 14, 2024
+ *      Author: ahmed
+ */
+
+/****************************LIB***************************/
+#include "../include/LIB/BIT_MATH.h"
+#include "../include/LIB/STD_Types.h"
+
+/****************************MCAL**************************/
+#include "../include/MCAL/MGPIO/MGPIO_Interface.h"
+#include "../include/MCAL/MSTK/MSTK_Interface.h"
+#include "../include/MCAL/MSPI/MSPI_Interface.h"
+
+
+
+#include "../include/HAL/HTFT/MTFT_Interface.h"
+#include "../include/HAL/HTFT/MTFT_Private.h"
+#include "../include/HAL/HTFT/MTFT_Config.h"
+
+
+
+/************************************************************************/
+/*						   FUNCTIONS DEFINITIONS						*/
+/************************************************************************/
+
+
+void TFT_voidSendCommand(u8 Copy_u8Cmd);
+void TFT_voidSendData(u8 Copy_u8data);
+void TFT_voidInit();
+void TFT_voidSendResetSequence(void);

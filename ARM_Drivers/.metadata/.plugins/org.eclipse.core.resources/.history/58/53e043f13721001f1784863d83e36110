@@ -1,0 +1,148 @@
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "STK_interface.h"
+#include "STK_private.h"
+#include "STK_config.h"
+
+static void(*ptrtofunc)(void)=NULL;
+static u8 Glopal_u8Flag;
+
+void STK_voidInit()
+{
+	//CLK SRC ??
+#if CLK_SRC==AHB
+	SET_BIT(STK->STK_CTRL,2);
+#elif CLK_SRC==AHB_8
+	CLR_BIT(STK->STK_CTRL,2);
+#else
+#error("Wrong Choice");
+
+#endif
+
+	//disable interrupt
+	CLR_BIT(STK->STK_CTRL,1);
+}
+void STK_voidSetBusyWait(u32 Copy_u32Ticks)
+{
+
+	//Value -> Load register
+	STK->STK_LOAD=Copy_u32Ticks;
+	//enable timer
+	SET_BIT(STK->STK_CTRL,0);
+	//wait for flag
+	while(!GET_BIT(STK->STK_CTRL,16));
+	// clear registers
+	STK->STK_LOAD=0;
+	STK->STK_VAL=0;
+
+}
+void STK_voidSetSingleInterval(u32 Copy_u32Ticks,void(*Copy_vptr)(void))
+{
+	//Load ticks -> load register
+	STK->STK_LOAD=Copy_u32Ticks;
+	//start timer
+	SET_BIT(STK->STK_CTRL,0);
+
+	//save function address
+	ptrtofunc=Copy_vptr;
+
+	//glopal variable -> single
+
+	Glopal_u8Flag=SINGLE;
+
+	//Enable interrupt
+
+	SET_BIT(STK->STK_CTRL,1);
+
+
+}
+void STK_voidSetPeriodicInterval(u32 Copy_u32Ticks,void(*Copy_vptr)(void))
+{
+	//Load ticks -> load register
+	STK->STK_LOAD=Copy_u32Ticks;
+	//start timer
+	SET_BIT(STK->STK_CTRL,0);
+
+	//save function address
+	ptrtofunc=Copy_vptr;
+
+	//glopal variable -> Periodic
+
+	Glopal_u8Flag=PERIODIC;
+
+	//Enable interrupt
+
+	SET_BIT(STK->STK_CTRL,1);
+
+}
+
+
+
+u32 STK_u32GetElapsedTime()
+{
+	return (STK->STK_LOAD-STK->STK_VAL);
+
+}
+u32 STK_u32GetRemainingTime()
+{
+	return STK->STK_VAL;
+}
+
+
+//ISR Implementation
+
+void SysTick_Handler(void)
+{
+	u8 Local_u8FlagState=0;
+
+	if(Glopal_u8Flag==SINGLE)
+	{
+		//Stop timer and disable interrupt
+		CLR_BIT(STK->STK_CTRL,1);
+		CLR_BIT(STK->STK_CTRL,0);
+		STK->STK_LOAD=0;
+		STK->STK_VAL=0;
+	}
+
+	//Invoke call back
+	ptrtofunc();
+	//clear the flag
+	Local_u8FlagState=GET_BIT(STK->STK_CTRL,16);
+
+
+}
+
+void STK_voidDelayms(u32 Copy_u32TimeINms)
+{
+	//take time , convert it to number of ticks,load ticks in load register,
+	//start timer ,wait to flag,stop timer
+	u32 Local_u32NumberOfTicks=(Copy_u32TimeINms*SYS_CLOCK)/(1000);
+	STK->STK_LOAD=Local_u32NumberOfTicks;
+	//enable timer
+	SET_BIT(STK->STK_CTRL,0);
+	//wait for flag
+	while(!GET_BIT(STK->STK_CTRL,16));
+	// clear registers
+	STK->STK_LOAD=0;
+	STK->STK_VAL=0;
+	//STOP TIMER
+	CLR_BIT(STK->STK_CTRL,0);
+
+}
+void STK_voidDelayus(u32 Copy_u32TimeINus)
+{
+	//take time , convert it to number of ticks,load ticks in load register,
+	//start timer ,wait to flag,stop timer
+	u32 Local_u32NumberOfTicks=(Copy_u32TimeINus*SYS_CLOCK)/(1000000);
+	STK->STK_LOAD=Local_u32NumberOfTicks;
+	//enable timer
+	SET_BIT(STK->STK_CTRL,0);
+	//wait for flag
+	while(!GET_BIT(STK->STK_CTRL,16));
+	// clear registers
+	STK->STK_LOAD=0;
+	STK->STK_VAL=0;
+	//STOP TIMER
+	CLR_BIT(STK->STK_CTRL,0);
+
+}

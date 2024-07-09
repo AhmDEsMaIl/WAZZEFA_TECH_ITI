@@ -1,0 +1,20 @@
+#ifndef UART_INTERFACE_H_
+#define UART_INTERFACE_H_
+
+
+void UART_voidInit(void);
+
+void UART_voidSendByteSynchronous(u8 Copy_u8Data);
+
+u8 UART_u8ReciveDataByte(void);
+
+void UART_voidEnable(void);
+void UART_voidDisable(void);
+void UART_voidSendString(u8 *ptr);
+u8 UART_u8ReadDataSynch(u8 *Copy_u8DataCome);
+
+
+
+
+
+#endif

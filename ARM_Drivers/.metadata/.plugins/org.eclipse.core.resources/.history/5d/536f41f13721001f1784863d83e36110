@@ -1,0 +1,39 @@
+#ifndef STK_PRIVATE_H_
+#define STK_PRIVATE_H_
+
+
+
+#define STK_BASE_ADDESS    0xE000E010
+
+typedef struct
+{
+	u32 STK_CTRL;
+	u32 STK_LOAD;
+	u32 STK_VAL;
+
+}STK_type;
+
+
+
+#define AHB     1
+#define AHB_8   2
+
+#define SINGLE     0
+#define PERIODIC   1
+
+#define SYS_CLOCK        16000000
+
+
+
+#define STK      ((volatile STK_type*)STK_BASE_ADDESS)
+
+
+
+
+
+
+
+
+
+
+#endif

@@ -1,0 +1,60 @@
+/*
+ * MSPI_Config.h
+ *
+ *  Created on: 3 May 2024
+ *      Author: User
+ */
+
+#ifndef MSPI_CONFIG_H_
+#define MSPI_CONFIG_H_
+
+//*
+CPH_WR_FRST
+CPH_RD_FRST
+*//
+/*
+ * CPOL_IDLE_HIGH
+ * CPOL_IDLE_LOW
+ */
+
+/*
+ * MSTR_ENABLED
+ * MSTR_DISABLED
+ */
+
+/*
+ * DIV_2
+ * DIV_4
+ * DIV_8
+ * DIV_16
+ */
+
+/*
+ * SPI_ENABLED
+ * SPI_DISABLED
+ */
+
+/*
+ * LSB_FRST
+ * MSB_FRST
+ */
+
+
+
+
+#define CPHA         CPH_WR_FRST
+#define CPOL         CPOL_IDLE_LOW
+#define MSTR_MODE    MSTR_ENABLED
+#define PRE_SCALER   DIV_2
+#define MASK_VALUE   0b111
+
+#define SPI_ENABLE_MODE   SPI_ENABLED
+
+#define SPI_DATA_ORDER     MSB_FRST
+
+
+
+
+
+
+#endif /* MSPI_CONFIG_H_ */

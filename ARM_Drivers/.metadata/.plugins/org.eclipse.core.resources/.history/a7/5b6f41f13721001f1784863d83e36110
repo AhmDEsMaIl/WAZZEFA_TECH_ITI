@@ -1,0 +1,82 @@
+/*
+ * FDI_program.c
+ *
+ *  Created on: May 23, 2024
+ *      Author: yousef.ahmed
+ */
+
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "FDI_interface.h"
+#include "FDI_private.h"
+#include "FDI_config.h"
+
+
+
+void FDI_voidEraseSector(u8 Copy_u8SectorNum)
+{
+	//MAKE SURE BUSY FLAG NOT RAISED
+	while(GET_BIT(FDI->SR,16)==1);
+	//CHECK CTR LOCKED OR NOT
+	if(GET_BIT(FDI->CR,31)==1)
+	{
+		FDI->KEYR=KEY1;
+		FDI->KEYR=KEY2;
+	}
+	//SET SECTOR NUMBER
+	//CLEAR SECTOR NUMBE BITS
+	FDI->CR &= 0XFFFFFF87;
+	FDI->CR |=(Copy_u8SectorNum<<3);
+	//ACTIVATE SECTOR ERASE MODE
+	SET_BIT(FDI->CR,1);
+	//CLR_BIT(FDI->CR,2);
+	//START OPERATION
+	SET_BIT(FDI->CR,16);
+	//Wait for flag
+	while(GET_BIT(FDI->SR,16)==1);
+	//Clear EOF
+	SET_BIT(FDI->SR,0);
+	//Deactivate the operated mode
+	CLR_BIT(FDI->CR,1);
+}
+
+void FDI_voidEraseAppSector(void)
+{
+	for(u8 i=1;i<6;i++)
+	{
+		FDI_voidEraseSector(i);
+	}
+}
+
+void FDI_voidWrite(u32 Copy_u32Address,u16 *ptr,u8 Copy_u8Length)
+{
+	//MAKE SURE BUSY FLAG NOT RAISED
+	while(GET_BIT(FDI->SR,16)==1);
+	//CHECK CTR LOCKED OR NOT
+	if(GET_BIT(FDI->CR,31)==1)
+	{
+		FDI->KEYR=KEY1;
+		FDI->KEYR=KEY2;
+	}
+	//select half word mode  -> psize
+	FDI->CR &= 0XFFFFFCFF;
+	FDI->CR|=(HALF_WORD<<8);
+	for(u8 i=0;i<Copy_u8Length;i++)
+	{
+		//Set The programming
+		SET_BIT(FDI->CR,0);
+		*((u16*)Copy_u32Address)=ptr[i];
+		Copy_u32Address+=2;
+		/*wait busy flag*/
+		while(GET_BIT(FDI->SR,16)==1);
+		//Clear EOF
+		SET_BIT(FDI->SR,0);
+		//Deactivate mode
+		CLR_BIT(FDI->CR,0);
+	}
+
+
+
+}
+
+

@@ -1,0 +1,20 @@
+src/main.o: ../src/main.c ../include/STD_TYPES.h ../include/BIT_MATH.h \
+ ../include/MRCC_Interface.h ../include/MGPIO_Interface.h \
+ ../include/STK_interface.h ../include/UART_interface.h \
+ ../include/FDI_interface.h ../include/HEXPARSING_interface.h
+
+../include/STD_TYPES.h:
+
+../include/BIT_MATH.h:
+
+../include/MRCC_Interface.h:
+
+../include/MGPIO_Interface.h:
+
+../include/STK_interface.h:
+
+../include/UART_interface.h:
+
+../include/FDI_interface.h:
+
+../include/HEXPARSING_interface.h:
